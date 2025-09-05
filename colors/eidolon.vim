@@ -1,7 +1,9 @@
-" eidolon.nvim/colors/eidolon.vim
+set background=dark
 
-" Define o nome do tema
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+
 let g:colors_name = "eidolon"
-
-" Chama a função Lua para carregar o tema
 lua require('eidolon').load()
