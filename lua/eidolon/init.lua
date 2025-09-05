@@ -8,7 +8,7 @@ local function highlight(group, colors)
   local val = {}
   if colors.fg then val.fg = colors.fg end
   if colors.bg then val.bg = colors.bg end
-  if colors.style then val.style = colors.style else val.style = "NONE" end
+  if colors.style then val.style = colors.style end
   if colors.sp then val.sp = colors.sp end
   vim.api.nvim_set_hl(0, group, val)
 end
